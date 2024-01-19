@@ -18,6 +18,18 @@
 		<meta name="msapplication-TileColor" content="#0F7D00">
 		<link rel="stylesheet" href="css/main.css" />
 		<noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
+		<script type="text/javascript"> 
+			var t = 10;//设定跳转的时间 
+			setInterval("refer()", 1000); //启动1秒定时 
+			function refer() {
+				if (t == 0){
+					location = "http://www.feiniaomy.com"; //跳转的地址
+				}
+				document.getElementById('show').innerHTML = "" + t + "秒后跳转转到飞鸟慕鱼博客"; // 显示倒计时 
+				t--; // 计数器递减 
+			} 
+		</script>
+		<span id="show"></span>
 		<style>
 		footer h2{
 			font-size: 22px;
